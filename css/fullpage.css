@@ -1,0 +1,93 @@
+    /* 1. definir ESTILO GENERAL*/
+    /* para cubrir cualquier "vacío" no contemplado en las queries */
+    /* SI no se define este estilo general, en los casos no contemplados por las media queries, NO SE APLICARÍA NINGÚN ESTILO */
+/* As hex codes */
+/*http://paletton.com/#uid=23I0u0kbRt14+E48dwffUpTkImm*/
+/* As hex codes */
+
+.color-primary-0 { color: #66789A }	/* Main Primary color  Azules*/
+.color-primary-1 { color: #A7B0C2 }
+.color-primary-2 { color: #8391AA }
+.color-primary-3 { color: #4C6189 }
+.color-primary-4 { color: #314A76 }
+
+.color-complement-0 { color: #E7C992 }	/* Main Complement color Beig*/
+.color-complement-1 { color: #FFF1D7 }
+.color-complement-2 { color: #FFE8BE }
+.color-complement-3 { color: #CEAA68 }
+.color-complement-4 { color: #B28A3F }
+
+*{box-sizing: border-box; margin:0}
+body {
+    margin: 0 auto;
+    background-color: #314A76; 
+    color: #fff;
+    min-width: 300px;
+    height: 100vh;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 6px;
+}
+main,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    height: 20%;
+    min-height: 55px;
+    background-color: #A7B0C2;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    height: 8vh;
+}
+main {
+    margin: 3px 0;
+    flex-grow: 1;     /* adaptative */
+    background-color: #fff;
+    color: #314A76;
+}
+
+footer {
+    height: 10%;
+    min-height: 30px;
+    background-color: #CEAA68;
+}
+
+footer p {
+    margin: 0;
+}
+@media (orientation: landscape) {
+    header {       
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    img {
+        height: 19vh;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1400px) {
+    body {        
+        background-color: red;
+    }
+}
+/* Mobile*/
+@media (max-width: 900px) {
+    body {        
+        background-color: greenyellow;
+    } 
+}
